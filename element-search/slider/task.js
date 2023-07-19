@@ -1,10 +1,8 @@
 let sliderPrev = document.getElementsByClassName('slider__arrow_prev')[0];
 let sliderNext = document.getElementsByClassName('slider__arrow_next')[0];
 let images = Array.from(document.getElementsByClassName('slider__item'));
-let currentNum = 0;
-let currentNumDot = 0;
-
 let sliderDot = Array.from(document.getElementsByClassName('slider__dot'));
+let currentNum = 0;
 
 
 sliderPrev.onclick = function() {
