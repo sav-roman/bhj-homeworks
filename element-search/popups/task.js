@@ -14,5 +14,6 @@ let clickSuccess = Array.from(document.getElementsByClassName('show-success'));
 clickSuccess.forEach(function(el) {
     el.onclick = function() {
       modalSuccess.classList.add('modal_active');
+      modalWin.classList.remove('modal_active');
     }
   })
