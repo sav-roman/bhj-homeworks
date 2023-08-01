@@ -19,15 +19,17 @@ enterString.addEventListener('input', function(e) {
   textValue = e.target.value;
 });
 
-enterString.addEventListener('keyup', function(e) {
+enterString.addEventListener('keydown', function(e) {
   if(e.code === 'Enter') {
     if(enterString.value !== '') {
       addText(textValue);
       enterString.value = '';
       }
+    e.preventDefault();
   }
 });
 
-bottomEnter.addEventListener('click', function() {
+bottomEnter.addEventListener('click', function(e) {
   addText(textValue);
+  e.preventDefault();
 });
